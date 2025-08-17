@@ -2,6 +2,7 @@ import { nav } from "../../utils/data";
 import { Link } from "react-router-dom";
 import { IconMenu2 } from "@tabler/icons-react"
 import { useState } from "react";
+import Logo from "../../assets/logo.png"
 
 
 function Header() {
@@ -10,7 +11,9 @@ function Header() {
         <div className="relative">
             <div className="flex relative md:rounded-full bg-white justify-between items-center mt-4 max-w-5xl mx-auto px-8 py-2 shadow-main border border-neutral-200">
                 <div>
-                    logo
+                    <Link to="/">
+                        <img src={Logo} alt="logo" className="w-32" />
+                    </Link>
                 </div>
 
                 <div className="hidden md:flex items-center gap-5 font-medium">
