@@ -13,7 +13,7 @@ function Header() {
                     logo
                 </div>
 
-                <div className="hidden md:flex items-center gap-5">
+                <div className="hidden md:flex items-center gap-5 font-medium">
                     {nav.map((item, index) => (
                         <Link to={item.path} key={index} className="hover:text-[#27ae60] capitalize transition duration-200 ease-linear">{item.text}</Link>
                     ))}
@@ -24,7 +24,7 @@ function Header() {
                         <span>2</span>
                         <span>My List</span>
                     </button>
-                    <button className="bg-[#27AE60] px-4 py-1">Sign In</button>
+                    <button className="bg-[#27AE60] hover:bg-[#12984a] px-5 py-1.5 text-neutral-100 shadow-main rounded-lg cursor-pointer transition duration-500 ease-in-out">Sign In</button>
                 </div>
 
                 <div onClick={() => setOpen(!open)} className="md:hidden">
@@ -33,7 +33,7 @@ function Header() {
 
                 {
                     open && (
-                        <div className="absolute inset-x-0 bg-white shadow-main top-15 max-w-[90%] mx-auto transition duration-700 ease-in-out">
+                        <div className="absolute inset-x-0 shadow-main top-15 max-w-[80%] bg-teal-400 mx-auto transition duration-700 ease-in-out">
                             <div className="flex md:hidden flex-col items-start gap-4 text-sm p-4 rounded-md">
                                 {nav.map((item, index) => (
                                     <Link to={item.path} key={index} className="hover:text-[#27ae60] capitalize">{item.text}</Link>
