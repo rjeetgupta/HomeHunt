@@ -4,7 +4,7 @@ import bgImage from "../../assets/banner.png"
 function Hero() {
   return (
     <section 
-      className="relative h-screen flex items-center justify-center text-white"
+      className="relative h-screen flex items-center justify-center text-white mt-5"
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",
